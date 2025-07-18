@@ -10,4 +10,10 @@ El repositorio cuenta con 6 archivos sobre base de datos que contienen:
   - Triggers. *dql_triggers.md*
   - Eventos. *dql_eventos.md*
 
+### Requerimientos del Examen:
+  - *Consultas SQL*:
+  -*Funciones SQL*:
+  - *Triggers*:
+  - *Eventos SQL*:
+
 
