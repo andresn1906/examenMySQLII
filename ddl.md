@@ -90,6 +90,15 @@ CREATE TABLE IF NOT EXISTS pelicula_actor (
     ultima_actualizacion TIMESTAMP
 );
 
+CREATE TABLE IF NOT EXISTS pelicula_categoria (
+    id_categoria TINYINT UNSIGNED,
+    id_pelicula SMALLINT UNSIGNED,
+    PRIMARY KEY(id_pelicula, id_categoria),
+    CONSTRAINT FK_id_categoria2 FOREIGN KEY (id_categoria) REFERENCES categoria(id_categoria),
+    CONSTRAINT FK_id_pelicula2 FOREIGN KEY (id_pelicula) REFERENCES pelicula(id_pelicula),
+    ultima_actualizacion TIMESTAMP
+);
+
 CREATE TABLE IF NOT EXISTS almacen (
     id_almacen TINYINT UNSIGNED,
     id_direccion SMALLINT UNSIGNED,
